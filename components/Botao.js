@@ -15,7 +15,7 @@ const Botao = (props) => {
 
     return (
         <TouchableHighlight
-            onPress={() => console.log(`clicou no botão`)}>
+            onPress={() => props.onClick(props.label)}>
             <Text style={estilosBotao}>
                 {props.label}
             </Text>
@@ -42,8 +42,8 @@ const estilos = StyleSheet.create({
         width: width/4 * 3
     },
     botaoOperacao:{
-        color: '#fff',
-        backgroundColor: '#fa8231'
+        color: '#fffff',
+        backgroundColor: '#00ffff'
 
     }
 })
